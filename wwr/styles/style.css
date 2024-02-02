@@ -1,0 +1,35 @@
+
+
+.content {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #fcfbfb; 
+}
+header {
+    background-color: #44648A;
+}
+nav a:hover {
+    background-color: #382733;
+    color: whitesmoke
+}
+nav a{
+    background-color: #44648A;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none
+}
+footer p {
+    font-size: 1.2em;
+}  
+.home-title
+h4
+.book, .join
+.book:hover, .join:hover
+.msg h2
+.msg p
+footer
+footer a
+footer a:hover
