@@ -1,17 +1,38 @@
+#logo > img{
+    max-width: 50%;
+    max-height: 50%;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 5px;
+    position: absolute;
+    margin-top: 50px;
+}
 #content {
     max-width: 1600px;
     margin: 0 auto;
     text-align: center;
+    background-color: #44648A;  
 }
-#background {
+
+
+
+/* #background {
     height: 725px;
-}
-body {
-    background-color: whitesmoke; 
+} */
+
+/* .msg {
+    background-color: #6f7364;
+    line-height: 1.5em;
+  } */
+.home-title {
+    font-family: 'Merriweather', 'Bradley Hand', sans-serif;
+    font-size: 2em;
 }
 header {
     background-color: #44648A;
     text-align: center;
+    margin-top: 10px;
 }
 nav a:hover {
     background-color: #382733;
@@ -19,16 +40,30 @@ nav a:hover {
     text-align: center;
 }
 nav a{
+    float: left;
     background-color: #44648A;
     color: whitesmoke;
     text-align: center;
     text-decoration: none;
-}
-footer p {
-    font-size: 1.2em;
+    padding: 35px;
+    overflow: hidden;
+    margin-top: 50px;
 }  
-
-#hero-msg h1{
+body {
+    font-family: Merriweather, Arial, sans-serif;
+    font-size: 22px;
+    padding: 0px;
+    max-width: 1600px;
+    text-align: center;
+    background-color: #44648A; 
+}
+/* h2 {
+    margin: 0;
+} */
+/* footer p {
+    font-size: 1.2em;
+}   */
+/* #hero-msg h1{
     text-align: center;
 }
 #hero-msg h4{
@@ -50,4 +85,4 @@ h4
 footer
 footer a
 footer a:hover
-
+ */
