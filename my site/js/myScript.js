@@ -18,3 +18,5 @@ function openPic(event, picName) {
     evt.currentTarget.className += " active";
   }
   
+
+  //This code is a placeholder until i write my own code for this. it is based of the w3c schools js for tab menus
