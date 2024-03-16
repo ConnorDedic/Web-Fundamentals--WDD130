@@ -52,64 +52,64 @@ nav a:hover {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 
-  /* Style the buttons that are used to open the tab content */
-  .pictureTab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-  }
-  
-  /* Change background color of buttons on hover */
-  .pictureTab button:hover {
-    background-color: #ddd;
-  }
-  
-  /* Create an active/current tablink class */
-  .pictureTab button.active {
-    background-color: #ccc;
+/* Style the buttons that are used to open the tab content */
+.pictureTab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
 
-  }
+/* Change background color of buttons on hover */
+.pictureTab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.pictureTab button.active {
+  background-color: #ccc;
+
+}
   
   /* Style the pictureTab content */
-  .pictureTabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-    margin: auto;
-    text-align: center;
-  }
+.pictureTabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  margin: auto;
+  text-align: center;
+}
 .tabcontent {
   margin: auto;
   text-align: center;
 
 }
-  pic1 {
-    height: 50%;
-    width: 50%;
-    grid-column: 0/1;
-    margin: auto;
-  }
-  pic2 {
-    grid-column: 1/2;
-    margin: auto;
-  }
-  pic3 {
-    grid-column: 2/3;
-    margin: auto;
-  }
-  pic4 {
-    grid-column: 3/4;
-    margin: auto;
-  }
-  pic5 {
-    grid-column: 4/5;
-    margin: auto;
-  }
-::content{
+.pic1 {
+  height: 50%;
+  width: 50%;
+  grid-column: 0/1;
+  margin: auto;
+}
+.pic2 {
+  grid-column: 1/2;
+  margin: auto;
+}
+.pic3 {
+  grid-column: 2/3;
+  margin: auto;
+}
+.pic4 {
+  grid-column: 3/4;
+  margin: auto;
+}
+.pic5 {
+  grid-column: 4/5;
+  margin: auto;
+}
+.content{
   background-color: #396E94;
 }
