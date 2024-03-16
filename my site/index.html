@@ -28,7 +28,6 @@
   --nav-hover-link-color: white;
   --nav-hover-background-color: #382733;
 }
-
 nav {
   background-color: var(--nav-background-color);
   line-height: 3em;
@@ -37,7 +36,6 @@ nav {
   list-style-type: none;
   display: flex;
 }
-
 nav a {
   padding:1em;
   min-width: 120px;
@@ -54,15 +52,14 @@ nav a:hover {
 /* Style the */
 .pictureTab {
     overflow: hidden;
-    border: 10px solid #f1f1f1;
+    /* border: 10px solid #f1f1f1; */
     background-color: #396E94;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
-
 /* Style the buttons that are used to open the tab content */
 .pictureTab button {
-  background-color: inherit;
+  background-color: #396E94;
   float: left;
   border: none;
   outline: none;
@@ -70,23 +67,20 @@ nav a:hover {
   padding: 14px 16px;
   transition: 0.3s;
 }
-
 /* Change background color of buttons on hover */
 .pictureTab button:hover {
-  background-color: #ddd;
+  background-color: #382733;
 }
-
 /* Create an active/current tablink class */
 .pictureTab button.active {
-  background-color: #ccc;
+  background-color: #382733;
 
 }
-  
   /* Style the pictureTab content */
 .pictureTabcontent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc;
+  border: 0px solid #382733;
   border-top: none;
   margin: auto;
   text-align: center;
@@ -121,31 +115,33 @@ nav a:hover {
 .content{
   background-color: #396E94;
 }  
+.body{
+    color: #396E94;
+}
     </style>
     <!-- <script src="/my site/js/myScript.js"></script> -->
     <script>
         function openPic(event, picName) {
-    var i, tabcontent, tablinks;
+            var i, tabcontent, tablinks;
+        
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+            }
+        
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+        
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(picName).style.display = "block";
+            evt.currentTarget.className += " active";  
+        }
+        document.getElementById("defaultOpen").click()
   
-    // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-  
-    // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-  
-    // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(picName).style.display = "block";
-    evt.currentTarget.className += " active";
-  }
-  
-
-  //This code is a placeholder until i write my own code for this. it is based of the w3c schools js for tab menus
     </script>
 </head>
 <body>
@@ -156,22 +152,23 @@ nav a:hover {
 <!--Nav Section -->
 <header>
     <a id="logo_link" href="index.html">
-        <img class="logo" src="my site/images/logo.jpg" alt="logo" width = "150" height="75">
+        
     </a>
-    <nav>  
+    <nav> 
+        <img class="logo" src="/my site/images/logo.jpg" alt="logo" width = "75" height="75"> 
         <a href="/home/">Home</a> 
         <a href="/my site/index.html">Page 2</a> 
         <a href="#">Contact Us</a>
     </nav>
 </header>
-<div id = content>
+<div class = content>
     <!--Picture Tabs -->
     <div class="pictureTab">
-        <button class='tablinks' onclick="openPic(event, 'pic1')"><img src="images/CthulhuStatue.jpg" height = '90%' width = '90%' ></button>
-        <button class='tablinks' onclick="openPic(event, 'pic2')"><img src="images/Monk.jpg" height = '85%' width = '85%'></button>
-        <button class='tablinks' onclick="openPic(event, 'pic3')"><img src="images/Monk 2.jpg" height = '85%' width = '85%'></button>
-        <button class='tablinks' onclick="openPic(event, 'pic4')"><img src="images/minis.jpg" height = '85%' width = '85%'></button>
-        <button class='tablinks' onclick="openPic(event, 'pic5')"><img src="images/logo.jpg" height = '75%' width = '75%'></button>
+        <button class='tablinks' onclick="openPic(event, 'pic1')" id="defaultOpen"><img src="images/CthulhuStatue.jpg" height = '90%' width = '90%' ></button>
+        <button class='tablinks' onclick="openPic(event, 'pic2')"><img src="images/Monk.jpg" height = '80%' width = '85%'></button>
+        <button class='tablinks' onclick="openPic(event, 'pic3')"><img src="images/Monk 2.jpg" height = '80%' width = '85%' ></button>
+        <button class='tablinks' onclick="openPic(event, 'pic4')"><img src="images/minis.jpg" height = '80%' width = '85%'></button>
+        <button class='tablinks' onclick="openPic(event, 'pic5')"><img src="images/logo.jpg" height = '70%' width = '75%'></button>
     </div>
 
     <!--picTabContent-->
