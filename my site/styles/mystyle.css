@@ -26,18 +26,15 @@ nav {
   line-height: 3em;
   text-align: center;
   font-size: 1.2em;
-}
-nav  {
   list-style-type: none;
   display: flex;
-
 }
+
 nav a {
   padding:1em;
   min-width: 120px;
   text-decoration: none;
   padding: 10px;
-
 }
 nav a:link, nav a:visited {
   color: var(--nav-link-color);
@@ -46,16 +43,15 @@ nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
 }
-
 /* Style the */
 .pictureTab {
     overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    border: 10px solid #f1f1f1;
+    background-color: #396E94;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
-  
+
   /* Style the buttons that are used to open the tab content */
   .pictureTab button {
     background-color: inherit;
@@ -114,3 +110,6 @@ nav a:hover {
     grid-column: 4/5;
     margin: auto;
   }
+::content{
+  background-color: #396E94;
+}
