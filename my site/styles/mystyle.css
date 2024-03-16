@@ -34,7 +34,7 @@ nav a {
   padding:1em;
   min-width: 120px;
   text-decoration: none;
-  padding: 10px;
+  padding: 0px;
 }
 nav a:link, nav a:visited {
   color: var(--nav-link-color);
@@ -42,6 +42,9 @@ nav a:link, nav a:visited {
 nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
+}
+footer{
+  margin-top: 200px;
 }
 /* Style the */
 .pictureTab {
@@ -113,3 +116,46 @@ nav a:hover {
 .content{
   background-color: #396E94;
 }
+
+.banner{
+  margin: auto;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+#bannerImg{
+  grid-row: 0/1;
+  background-color: #382733;
+  margin: auto;
+}
+
+#bannerText{
+  grid-row: 1/6;
+  background-color: #396E94;
+  color: white;
+  font-family: "Merriweather";
+  font-size: larger;
+}
+.desc{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-rows:200px;
+  background-color: #396E94;
+
+}
+#descText{
+  grid-column: 1/2;
+  grid-row: 0/1;
+  text-align: center;
+  color: white;
+  
+}
+#descImg{
+  grid-column: 4/5;
+  grid-row: 0/1;
+  object-fit: contain;
+
+}
+
+
+
