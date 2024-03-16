@@ -118,24 +118,34 @@ footer{
 }
 
 .banner{
-  margin: auto;
   text-align: center;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  background-color: #382733;
 }
 #bannerImg{
-  grid-row: 0/1;
-  background-color: #382733;
-  margin: auto;
+  height: 10%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: 110px;
 }
 
 #bannerText{
-  grid-row: 1/6;
-  background-color: #396E94;
   color: white;
   font-family: "Merriweather";
-  font-size: larger;
+  font-size: 50px;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
+
+
+
 .desc{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
