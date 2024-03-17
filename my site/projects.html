@@ -172,44 +172,39 @@ footer{
   grid-column: 4/5;
   grid-row: 0/1;
   object-fit: contain;
-
 }
-
 
 #backandforth {
-  margin: auto;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr ;
 }
-
 .sec1 {
   margin: auto;
-  grid-row: 0/1;
-
-}
-.text1 {
-  margin: auto;
-  grid-row: 0/1;
-  grid-column: 3/4;
-}
-.babimg1 {
-  grid-row: 0/1;
-  grid-column: 0/2;
+  /* grid-row: 0/1; */
 }
 .sec2 {
   margin: auto;
-  grid-row: 1/2;
+  /* grid-row: 1/2; */
+}
+.text1 {
+  margin: auto;
+  /* grid-row: 0/1; */
+  grid-column: 1;
+}
+.babimg1 {
+  margin: 0%;
+  grid-column: 2;
 }
 .text2 {
   margin: auto;
-  grid-row: 1/2;
-  grid-column: 0/2;
+  grid-column:1;
 }
 .babimg2 {
-  grid-row: 1/2;
-  grid-column: 3/4;
+  margin: 0%;
+  grid-column: 2;
 }
+
 
       </style>
   </head>
@@ -232,7 +227,7 @@ footer{
           this is sec 1.
         </div>
         <div id="babimg1">
-          <img>
+          <img src="/images/Monk.jpg" height="15%" width="15%">
         </div>
       </div>
 
@@ -241,7 +236,7 @@ footer{
           text 2
         </div>
         <div id="babimg1">
-          <img>
+          <img src="/my site/images/logo.jpg" height="15%" width="15%">
         </div>
       </div>
 
