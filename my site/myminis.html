@@ -155,8 +155,6 @@ footer{
             document.getElementById(picName).style.display = "block";
             evt.currentTarget.className += " active";  
         }
-        document.getElementById("defaultOpen").click();
-  
     </script>
 </head>
 <body>
@@ -184,7 +182,8 @@ footer{
         <button class='tablinks' onclick="openPic(event, 'pic3')"><img src="/Web-Fundamentals--WDD130/my site/images/Monk 2.jpg" height = '80%' width = '85%' ></button>
         <button class='tablinks' onclick="openPic(event, 'pic4')"><img src="/Web-Fundamentals--WDD130/my site/images/minis.jpg" height = '80%' width = '85%'></button>
         <button class='tablinks' onclick="openPic(event, 'pic5')"><img src="/Web-Fundamentals--WDD130/my site/images/logo.jpg" height = '70%' width = '75%'></button>
-    </div>
+      </div>
+      
 
     <!--picTabContent-->
     <div id = "pic1" class="tabcontent">
@@ -227,3 +226,7 @@ footer{
       <a href=" #">Contact Us</a>
   </nav>
 <footer>
+
+<script>
+  document.getElementById("defaultOpen").click();
+</script>
